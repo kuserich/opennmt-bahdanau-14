@@ -6,6 +6,8 @@ VENVS_DIR=${BASE_DIR}/venvs
 TOOLS_DIR=${BASE_DIR}/tools
 SOCKEYE_DIR=${BASE_DIR}/sockeye_autopilot
 
+CUDA_VERSION=9.2
+
 LANGUAGE_DATA="wmt14_en_de"
 
 PYTHON_VERSION="python3.7"
