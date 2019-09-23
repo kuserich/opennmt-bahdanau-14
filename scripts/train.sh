@@ -23,5 +23,5 @@ python OpenNMT-py/train.py \
     --rnn_type "LSTM" \
     --global_attention "mlp" \
     --world_size 4 \
-    --gpu_ranks 0 1 2 3 \
+    --gpu_ranks 4 5 6 7 \
     --log_file logs/training.log
