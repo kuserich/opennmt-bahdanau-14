@@ -12,5 +12,5 @@ python OpenNMT-py/preprocess.py \
     --train_tgt ${SOCKEYE_DIR}/systems/${LANGUAGE_DATA}/data/bpe/train.trg \
     --valid_src ${SOCKEYE_DIR}/systems/${LANGUAGE_DATA}/data/bpe/test.0.src \
     --valid_tgt ${SOCKEYE_DIR}/systems/${LANGUAGE_DATA}/data/bpe/test.0.trg \
-    --save_data /data/preprocessed \
+    --save_data data/preprocessed \
     --log_file logs/preprocessing.log
