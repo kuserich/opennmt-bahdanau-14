@@ -9,7 +9,7 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
 
 python OpenNMT-py/train.py \
-    --data /data/preprocessed \
+    --data data/preprocessed \
     --save_model models/bahdanau-14 \
     --src_word_vec_size 500 \
     --tgt_word_vec_size 500 \
