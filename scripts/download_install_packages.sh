@@ -14,6 +14,8 @@ if [[ $python_location == *"/usr/bin"* ]]; then
     exit
 fi
 
+
+pip install sockeye
 pip3 install torch==1.2.0+cu92 torchvision==0.4.0+cu92 -f https://download.pytorch.org/whl/torch_stable.html
 
 git clone https://github.com/OpenNMT/OpenNMT-py
