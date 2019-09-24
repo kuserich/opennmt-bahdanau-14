@@ -6,7 +6,7 @@ source ${SCRIPTS_DIR}/config.sh
 mkdir models/
 
 #export CUDA_VISIBLE_DEVICES=4,5,6,7
-export CUDA_VISIBLE_DEVICES=7
+export CUDA_VISIBLE_DEVICES=5,7
 
 python OpenNMT-py/train.py \
     --data data/preprocessed \
@@ -22,6 +22,6 @@ python OpenNMT-py/train.py \
     --dec_rnn_size 1000 \
     --rnn_type "LSTM" \
     --global_attention "mlp" \
-    --world_size 4 \
-    --gpu_ranks 0 1 2 3 \
+    --world_size 2 \
+    --gpu_ranks 0 1 \
     --log_file logs/training.log
