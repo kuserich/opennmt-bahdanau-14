@@ -5,8 +5,8 @@ source ${SCRIPTS_DIR}/config.sh
 
 mkdir models/
 
-export CUDA_VISIBLE_DEVICES=4,5,6,7
-
+#export CUDA_VISIBLE_DEVICES=4,5,6,7
+export CUDA_VISIBLE_DEVICES=7
 
 python OpenNMT-py/train.py \
     --data data/preprocessed \
