@@ -1,2 +1,7 @@
-OpenNMT-py/
 venvs/
+data/
+databackup/
+logs/
+models/
+pred.txt
+sockeye_autopilot/
