@@ -5,7 +5,7 @@ source ${SCRIPTS_DIR}/config.sh
 
 export CUDA_VISIBLE_DEVICES=0,1
 
-mkdir output
+mkdir -p output
 
 python OpenNMT-py/translate.py \
   --model models/bahdanau-14_step_100000.pt \
