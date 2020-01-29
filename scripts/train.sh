@@ -3,14 +3,14 @@ BASE_DIR=${SCRIPTS_DIR}/..
 
 source ${SCRIPTS_DIR}/config.sh
 
-mkdir models/
+#mkdir models/
 
 #export CUDA_VISIBLE_DEVICES=4,5,6,7
-export CUDA_VISIBLE_DEVICES=5,7
+export CUDA_VISIBLE_DEVICES=1,2,4
 
 python OpenNMT-py/train.py \
-    --data data/preprocessed \
-    --save_model models/bahdanau-14 \
+    --data data/tf/preprocessed \
+    --save_model models/tf/bahdanau-14 \
     --src_word_vec_size 500 \
     --tgt_word_vec_size 500 \
     --model_type "text" \
@@ -22,6 +22,6 @@ python OpenNMT-py/train.py \
     --dec_rnn_size 1000 \
     --rnn_type "LSTM" \
     --global_attention "mlp" \
-    --world_size 2 \
-    --gpu_ranks 0 1 \
-    --log_file logs/training.log
+    --world_size 3 \
+    --gpu_ranks 0 1 2 \
+    --log_file logs/tf-training.log

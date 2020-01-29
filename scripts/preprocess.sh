@@ -8,9 +8,9 @@ mkdir logs/
 
 python OpenNMT-py/preprocess.py \
     --data_type "text"  \
-    --train_src ${SOCKEYE_DIR}/systems/${LANGUAGE_DATA}/data/bpe/train.src \
-    --train_tgt ${SOCKEYE_DIR}/systems/${LANGUAGE_DATA}/data/bpe/train.trg \
-    --valid_src ${SOCKEYE_DIR}/systems/${LANGUAGE_DATA}/data/bpe/test.0.src \
-    --valid_tgt ${SOCKEYE_DIR}/systems/${LANGUAGE_DATA}/data/bpe/test.0.trg \
-    --save_data data/preprocessed \
-    --log_file logs/preprocessing.log
+    --train_src /srv/scratch1/goeckeritz/opennmt-tf/train.src \
+    --train_tgt /srv/scratch1/goeckeritz/opennmt-tf/train.trg \
+    --valid_src /srv/scratch1/goeckeritz/opennmt-tf/valid.src \
+    --valid_tgt /srv/scratch1/goeckeritz/opennmt-tf/valid.trg \
+    --save_data data/tf/preprocessed \
+    --log_file logs/tf-preprocessing.log
