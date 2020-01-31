@@ -12,4 +12,4 @@ python OpenNMT-py/translate.py \
   --gpu 0 \
   --src sockeye_autopilot/systems/wmt14_en_de/data/bpe/dev.src \
   --tgt sockeye_autopilot/systems/wmt14_en_de/data/bpe/dev.trg \
-  --output output/tf_pred.txt
+  --output output/pred.txt
