@@ -6,3 +6,5 @@ models/
 pred.txt
 sockeye_autopilot/
 .idea
+output/
+OpenNMT-py
