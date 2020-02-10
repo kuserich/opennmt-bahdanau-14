@@ -24,4 +24,5 @@ python OpenNMT-py/train.py \
     --global_attention "mlp" \
     --world_size 1 \
     --gpu_ranks 0 \
+    --epochs 25 \
     --log_file logs/tf-training.log
